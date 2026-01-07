@@ -8,6 +8,10 @@
 ---
 
 ## Task 1: Rating Prediction via Prompting
+--
+**Colab Link:**  
+https://colab.research.google.com/drive/1-gsJkAsZsWnqpJ3waX0mAwQJMzHxpyrc
+--
 
 ### 1. Problem Statement
 The goal of Task 1 is to classify Yelp reviews into **1–5 star ratings** using **Large Language Models (LLMs)** through **prompt engineering**, without training or fine-tuning a custom machine learning model.
@@ -301,3 +305,4 @@ This submission demonstrates strong expertise in:
 - Robust validation and error handling
 
 Both tasks are **deployment-ready, scalable, and aligned with real-world AI product development standards**.
+
