@@ -1,0 +1,4 @@
+MONGODB_URI=mongodb+srv://inforceb27_db_user:hwi2D0ZVAaYYdoWQ@cluster0.rnwdwg2.mongodb.net/fynd-feedback?retryWrites=true&w=majority&appName=Cluster0
+GEMINI_API_KEY=AIzaSyApWCMaEvWUq3QL-DXUpcRV4KeYTArNekk
+PORT=5000
+NODE_ENV=development

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: white;
+    border-right: 1px solid #E2E8F0;
+    padding: 32px 24px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 40px;
+    max-width: 1600px;
+}
+
+/* UI Elements */
+.stat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #E2E8F0;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.table-container {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.review-row {
+    border-bottom: 1px solid #F1F5F9;
+    padding: 24px;
+    transition: background 0.1s;
+}
+
+.review-row:last-child {
+    border-bottom: none;
+}
+
+.review-row:hover {
+    background: #F8FAFC;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.badge-blue {
+    background: #DBEAFE;
+    color: #1E40AF;
+}
+
+.badge-green {
+    background: #DCFCE7;
+    color: #166534;
+}
+
+.badge-purple {
+    background: #F3E8FF;
+    color: #6B21A8;
+}
+
+.btn-icon {
+    background: transparent;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #475569;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-icon:hover {
+    background: #F1F5F9;
+    color: #0F172A;
+    border-color: #94A3B8;
+}
+
+.btn-delete {
+    color: #DC2626;
+    border-color: #FECACA;
+    background: #FEF2F2;
+}
+
+.btn-delete:hover {
+    background: #FEE2E2;
+    border-color: #FCA5A5;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    background: white;
+    color: #64748B;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.filter-btn.active {
+    background: #0F172A;
+    color: white;
+    border-color: #0F172A;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}
